@@ -153,15 +153,15 @@ jQuery(document).ready(function($) {
 	var siteSliderRange = function() {
     $( "#slider-range" ).slider({
       range: true,
-      min: 0,
-      max: 500,
+      min: 450,
+      max: 12000,
       values: [ 75, 300 ],
       slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        $( "#amount" ).val( "NGN" + ui.values[ 0 ] + " - NGN" + ui.values[ 1 ] );
       }
     });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    $( "#amount" ).val( "NGN" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - NGN" + $( "#slider-range" ).slider( "values", 1 ) );
 	};
 	siteSliderRange();
 
